@@ -819,9 +819,7 @@ button:focus {
     color: #283a5e;
     padding: 40px 16px;
   }
-  .header-style-1 #navbar > ul > li > a {
-    color: #fff;
-  }
+ 
   .site-header #navbar > ul .sub-menu {
     background-color: #fff;
     width: 220px;
@@ -1718,7 +1716,7 @@ button:focus {
   top: 40px;
 }
 .header-style-1 .sticky-on {
-  background: #283a5e !important;
+  background: #ffffff !important;
 }
 
 /*--------------------------------------------------------------
@@ -3395,7 +3393,7 @@ hero-style3
 
 .wpo-site-footer .wpo-upper-footer,
 .wpo-site-footer-2 .wpo-upper-footer {
-  padding: 40px 0 70px;
+  padding: 0px 40px 0 70px;
   background: url(../images/footer.jpg) center center/cover no-repeat local;
 }
 
@@ -3502,8 +3500,10 @@ hero-style3
   color: #08cc7f;
 }
 .wpo-footer-top {
-  padding-bottom: 20px;
+  padding-block: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .wpo-footer-top ul {
   display: -webkit-flex;
@@ -3520,7 +3520,7 @@ hero-style3
   display: block;
   width: 60px;
   height: 60px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgb(29 47 83);
   text-align: center;
   line-height: 65px;
   border-radius: 50%;
