@@ -819,7 +819,7 @@ button:focus {
     color: #283a5e;
     padding: 40px 16px;
   }
- 
+
   .site-header #navbar > ul .sub-menu {
     background-color: #fff;
     width: 220px;
@@ -2357,8 +2357,12 @@ hero-style3
 
 .wpo-select-area form {
   background: #fff;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.from-btn{
+  width: 100% !important;
+  right: unset !important;
 }
 
 .wpo-select-area form input,
@@ -3394,7 +3398,7 @@ hero-style3
 
 .wpo-site-footer .wpo-upper-footer,
 .wpo-site-footer-2 .wpo-upper-footer {
-  padding: 0px 40px 0 70px;
+  /* padding: 0px 40px 0 70px; */
   background: url(../images/footer.jpg) center center/cover no-repeat local;
 }
 
@@ -3514,25 +3518,25 @@ hero-style3
   display: flex;
   justify-content: flex-end;
 }
-.services-card__expand{
-      padding-top: 1rem;
-    font-size: 15px;
+.services-card__expand {
+  padding-top: 1rem;
+  font-size: 15px;
 }
-.paragraph--14  p{
+.paragraph--14 p {
   line-height: 23px;
 }
-.text-center{
+.text-center {
   text-align: center !important;
 }
-.video-container .container{
+.video-container .container {
   z-index: 9;
   position: relative;
 }
-.w-100{
+.w-100 {
   width: 100%;
 }
 .video-container {
-    background-image: url(/assets/images/slider/slide-4.jpg);
+  background-image: url(/assets/images/slider/slide-4.jpg);
 }
 .wpo-footer-top ul li {
   margin-right: 10px;
@@ -7595,7 +7599,7 @@ end*
 .site-header.header-style-1 {
   background-color: white;
 }
-.text-white{
+.text-white {
   color: white;
 }
 
@@ -7603,6 +7607,6 @@ end*
   color: #3f3f3f;
   font-weight: 600;
 }
-.copyright{
-justify-content: center !important;
+.copyright {
+  justify-content: center !important;
 }

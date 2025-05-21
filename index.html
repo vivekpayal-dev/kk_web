@@ -267,72 +267,77 @@
         </section>
         <!-- end of hero slider -->
         <!-- serch-area-start -->
+        <style>
+            .wpo-select-section {
+                background: white;
+                z-index: 999;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+                max-width: 1250px;
+            }
+
+            .form-control,
+            .input-group {
+                width: 100% !important;
+            }
+        </style>
+
+
         <div class="wpo-select-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="wpo-select-wrap">
-                            <div class="wpo-select-area">
-                                <form class="clearfix">
-                                    <div class="select-sub">
+            <div class="wpo-select-wrap">
+                <div class="wpo-select-area">
+                    <form>
+                        <div class="select-sub">
+                            <div class="form-group">
+                                <div id="filterDate">
+                                    <div class="input-group ">
+                                        <input type="text" class="form-control" placeholder="Full Name">
 
-                                        <div class="form-group">
-                                            <div id="filterDate">
-                                                <div class="input-group ">
-                                                    <input type="text" class="form-control" placeholder="Name">
-                                                    <div class="input-group-addon"></div>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
-                                    <div class="select-sub">
-                                        <div class="form-group">
-                                            <div id="filterDate2">
-                                                <!-- Datepicker as text field -->
-                                                <div class="input-group ">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Enter Your Number">
-                                                    <div class="input-group-addon">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="select-sub">
-
-                                        <div class="form-group">
-                                            <div id="filterDate">
-                                                <!-- Datepicker as text field -->
-                                                <div class="input-group ">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Enter Your Email">
-                                                    <div class="input-group-addon"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="select-sub">
-
-                                        <div class="form-group">
-                                            <div id="filterDate2">
-                                                <!-- Datepicker as text field -->
-                                                <div class="input-group ">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="How Can We Help?">
-                                                    <div class="input-group-addon">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="select-sub">
-                                        <button class="theme-btn-s2" type="submit">Submit</button>
-                                    </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        <div class="select-sub">
+                            <div class="form-group">
+                                <div id="filterDate2">
+                                    <!-- Datepicker as text field -->
+                                    <div class="input-group ">
+                                        <input type="text" class="form-control" placeholder="Enter Your Number">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="select-sub">
+
+                            <div class="form-group">
+                                <div id="filterDate">
+                                    <!-- Datepicker as text field -->
+                                    <div class="input-group ">
+                                        <input type="text" class="form-control" placeholder="Enter Your Email">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="select-sub">
+
+                            <div class="form-group">
+                                <div id="filterDate2">
+                                    <!-- Datepicker as text field -->
+                                    <div class="input-group ">
+                                        <input type="text" class="form-control"
+                                            placeholder="Tell me about your situation">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="select-sub">
+                            <button class="theme-btn-s2 from-btn" type="submit">Get in touch with me</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -719,6 +724,7 @@
                     .services-row {
                         display: flex;
                         align-items: end;
+                        justify-content: center;
 
                     }
 
@@ -740,18 +746,11 @@
                     <div class="col-md-4">
                         <div class="services-wrapper__col">
                             <div class="services-card open">
-                                <p class="text-white card-heading-short">SERHANT. Studios</p>
-                                <h5 class="text-white card-heading">Lights,
-                                    Camera,
-                                    Real Estate.</h5>
+                                <p class="text-white card-heading-short">Kapil Kansal Real Estate</p>
+                                <h5 class="text-white card-heading">Why don’t some houses sell? </h5>
                                 <div class="services-card__expand">
-                                    <div class="paragraph--14 services-card__text">
-                                        <p class="text-white">We are a full-service in-house production studio that
-                                            creates award-winning,
-                                            unique, specialized content strategically designed to resonate with the
-                                            largest real estate audience in the world.</p>
-                                    </div>
-                                    <a href="#" class="theme-btn-s2" type="submit">Thoughts from the Expert</a>
+                                    <a href="https://www.youtube.com/watch?v=88ZA36NrPWw" class="theme-btn-s2"
+                                        type="submit">Thoughts from the Expert</a>
                                 </div>
                             </div>
                         </div>
@@ -759,37 +758,12 @@
                     <div class="col-md-4">
                         <div class="services-wrapper__col">
                             <div class="services-card">
-                                <p class="text-white card-heading-short">SERHANT. Studios</p>
-                                <h5 class="text-white card-heading" role="heading">Lights,
-                                    Camera,
-                                    Real Estate.</h5>
+                                <p class="text-white card-heading-short">Kapil Kansal Real Estate</p>
+                                <h5 class="text-white card-heading" role="heading">Why do agents have different
+                                    opinions? </h5>
                                 <div class="services-card__expand">
-                                    <div class="paragraph--14 services-card__text">
-                                        <p class="text-white">We are a full-service in-house production studio that
-                                            creates award-winning,
-                                            unique, specialized content strategically designed to resonate with the
-                                            largest real estate audience in the world.</p>
-                                    </div>
-                                    <a href="#" class="theme-btn-s2" type="submit">Thoughts from the Expert</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="services-wrapper__col">
-                            <div class="services-card">
-                                <p class="text-white card-heading-short">SERHANT. Studios</p>
-                                <h5 class="text-white card-heading" role="heading">Lights,
-                                    Camera,
-                                    Real Estate.</h5>
-                                <div class="services-card__expand">
-                                    <div class="paragraph--14 services-card__text">
-                                        <p class="text-white">We are a full-service in-house production studio that
-                                            creates award-winning,
-                                            unique, specialized content strategically designed to resonate with the
-                                            largest real estate audience in the world.</p>
-                                    </div>
-                                    <a href="#" class="theme-btn-s2" type="submit">Thoughts from the Expert</a>
+                                    <a href="https://www.youtube.com/watch?v=NXoybs04X24" class="theme-btn-s2"
+                                        type="submit">Thoughts from the Expert</a>
                                 </div>
                             </div>
                         </div>
@@ -923,70 +897,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="footer-middle">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col col-lg-3 col-md-3 col-sm-6">
-                                <div class="widget market-widget wpo-service-link-widget">
-                                    <div class="widget-title">
-                                        <h3>Contact </h3>
-                                    </div>
-                                    <p>Trust badge lines here : <br>
-                                        Licensed REAA Agent”, “Local Christchurch Expert”
-                                    </p>
-                                    <div class="contact-ft">
-                                        <ul>
-
-                                            <li><a href="tel:020 4112 2362"><i class="fi ti-mobile"></i>+020 4112
-                                                    2362</a></li>
-                                            <li><a href="mailto:kapil.kansal@harcourts.co.nz"><i
-                                                        class="fi flaticon-email"></i>kapil.kansal@harcourts.co.nz</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col col-lg-3 col-md-3 col-sm-6">
-                                <div class="widget link-widget resource-widget">
-                                    <div class="widget-title">
-                                        <h3>Destination</h3>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                            <div class="col col-lg-3 col-md-3 col-sm-6">
-                                <div class="widget link-widget">
-                                    <div class="widget-title">
-                                        <h3>Useful Links</h3>
-                                    </div>
-                                    <ul>
-                                        <li><a href="#">Value I bring</a></li>
-                                        <li><a href="#">New Listings</a></li>
-                                        <li><a href="#">Testimonials </a></li>
-                                        <li><a href="#">Contact </a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col col-lg-3 col-md-3 col-sm-6">
-                                <div class="widget newsletter-widget">
-                                    <div class="widget-title">
-                                        <h3>Newsletter</h3>
-                                    </div>
-                                    <form>
-                                        <div class="input-1">
-                                            <input type="email" class="form-control" placeholder="Email Address *"
-                                                required="">
-                                        </div>
-                                        <div class="submit clearfix">
-                                            <button type="submit">subscribe<i class="ti-angle-right"></i></button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-- end container -->
                 </div>
             </div>
             <div class="wpo-lower-footer">
