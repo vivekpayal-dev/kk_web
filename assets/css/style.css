@@ -3537,6 +3537,8 @@ hero-style3
 }
 .video-container {
   background-image: url(/assets/images/slider/slide-4.jpg);
+  background-size: cover;
+  
 }
 .wpo-footer-top ul li {
   margin-right: 10px;
