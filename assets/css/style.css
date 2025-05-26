@@ -387,9 +387,12 @@ button:focus {
 }
 
 .section-title {
-  text-align: center;
+  text-align: left;
   margin-bottom: 70px;
   position: relative;
+}
+.section-title .mb-3{
+  margin-top: 8px;
 }
 
 .section-title span {
