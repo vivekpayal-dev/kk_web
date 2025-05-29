@@ -606,7 +606,8 @@
                                             data-wow-duration="1s"
                                             style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
                                             <h2>Request Your Free Appraisal</h2>
-                                            <p class="mb-3"><b>Online estimates miss the mark! Get a real appraisal from a local
+                                            <p class="mb-3"><b>Online estimates miss the mark! Get a real appraisal from
+                                                    a local
                                                     expert
                                                     who knows your area and your upgrades.</b>
                                             </p>
@@ -950,6 +951,146 @@
         <!-- end wpo-site-footer -->
     </div>
 
+    <!-- Popup  -->
+    <style>
+        .popup-wrapper {
+            position: fixed;
+            top: 200px;
+            background-color: white;
+            padding: 46px 32px 24px;
+            z-index: 999;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            max-width: 450px;
+            z-index: 999;
+
+            left: -100%;
+            pointer-events: none;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 2s ease-in-out;
+
+        }
+
+        @media (max-width: 600px) {
+            .popup-wrapper {
+                margin-inline: 1rem;
+            }
+        }
+
+        .popup-wrapper.active {
+            left: 0px;
+            pointer-events: auto;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .popup-form-grid {
+            margin-top: 2rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 1rem;
+            row-gap: 0.5rem;
+        }
+
+        .popup-form-grid .select-sub {
+            width: unset !important;
+            margin-right: 0px;
+
+        }
+
+        .grid-full {
+            grid-column: 1/-1;
+            margin-right: 0px;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            border: none;
+            background: #283a5e;
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+        }
+
+        .close-btn img {
+            max-width: 20px;
+            filter: invert(1);
+        }
+    </style>
+
+
+    <div class="popup-wrapper">
+        <div class="popup-container">
+            <button class="close-btn"><img src="./assets/images/close.png" alt=""></button>
+            <h4 class="text-center">Thank you for visiting my page. <br>
+                If you leave your details here. I will give you the information on <br>
+                the last 20 sales within your area
+            </h4>
+
+            <form class="popup-form-grid">
+                <div class="select-sub">
+                    <div class="form-group">
+                        <div id="filterDate">
+                            <div class="input-group ">
+                                <input type="text" class="form-control" placeholder="Name" required>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="select-sub">
+                    <div class="form-group">
+                        <div id="filterDate2">
+                            <!-- Datepicker as text field -->
+                            <div class="input-group ">
+                                <input type="number" class="form-control" placeholder="Phone Number" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" select-sub">
+
+                    <div class="form-group">
+                        <div id="filterDate">
+                            <!-- Datepicker as text field -->
+                            <div class="input-group ">
+                                <input type="email" class="form-control" placeholder="Email" required>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="select-sub">
+
+                    <div class="form-group">
+                        <div id="filterDate2">
+                            <!-- Datepicker as text field -->
+                            <div class="input-group ">
+                                <input type="text" class="form-control" placeholder="Tell me about your situation">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="select-sub grid-full">
+                    <button class="theme-btn-s2 from-btn" type="submit"> Let me help you get the best results!
+                    </button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+
+    <!-- Popup  -->
+
+
+
     <script>
         const serviceCards = document.querySelectorAll('.services-wrapper__col .services-card')
         serviceCards.forEach((card) => {
@@ -971,6 +1112,20 @@
     <!-- Custom script for this template -->
     <script src="assets/js/script.js"></script>
 </body>
+
+
+<script>
+    const popup = document.querySelector('.popup-wrapper')
+    const closeBtn = document.querySelector('.close-btn')
+    window.addEventListener('load', function () {
+        setTimeout(function () {
+            popup.classList.add('active')
+        }, 10000)
+    })
+    closeBtn.addEventListener('click', function () {
+        popup.classList.remove('active')
+    })
+</script>
 
 
 </html>
