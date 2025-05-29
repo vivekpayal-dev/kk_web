@@ -182,6 +182,31 @@
         </a>
     </div>
 
+    <style>
+        .popup-trigger-btn {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 65px;
+            height: 65px;
+            z-index: 999;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        .popup-trigger-btn img {
+            max-width: 35px;
+        }
+    </style>
+
+    <div class="popup-trigger-btn">
+        <img src="./assets/images/call.png" alt="">
+    </div>
+
     <!-- start page-wrapper -->
     <div class="page-wrapper">
         <!-- start preloader -->
@@ -1115,16 +1140,37 @@
 
 
 <script>
-    const popup = document.querySelector('.popup-wrapper')
-    const closeBtn = document.querySelector('.close-btn')
-    window.addEventListener('load', function () {
-        setTimeout(function () {
-            popup.classList.add('active')
-        }, 10000)
-    })
-    closeBtn.addEventListener('click', function () {
-        popup.classList.remove('active')
-    })
+    const popup = document.querySelector('.popup-wrapper');
+    const closeBtn = document.querySelector('.close-btn');
+    const popupBtn = document.querySelector('.popup-trigger-btn');
+
+    if (popup && closeBtn && popupBtn) {
+        window.addEventListener('load', function () {
+            popupBtn.style.display = 'block';
+            setTimeout(function () {
+                popup.classList.add('active');
+                if (popup.classList.contains('active')) {
+                    popupBtn.style.display = 'none';
+                } else {
+                    popupBtn.style.display = 'flex';
+                }
+            }, 10000);
+        });
+
+        popupBtn.addEventListener('click', function () {
+            popup.classList.add('active');
+            if (popup.classList.contains('active')) {
+                popupBtn.style.display = 'none';
+            } else {
+                popupBtn.style.display = 'flex';
+            }
+        });
+
+        closeBtn.addEventListener('click', function () {
+            popup.classList.remove('active');
+            popupBtn.style.display = 'flex';
+        });
+    }
 </script>
 
 
