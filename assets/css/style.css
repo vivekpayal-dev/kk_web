@@ -1,79 +1,4 @@
-/*------------------------------------------------------------------
-[Master Stylesheet]
-Theme Name:     Venom
-Version:        1.0.0
-Author:         wpoceans
-URL:            https://themeforest.net/user/wpoceans
--------------------------------------------------------------------*/
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-#0.1	Theme Reset Style
-#0.2	Global Elements
-#0.3	header-style
-#0.4	hero-style
-#0.5	wpo-serch-area
-#0.6	wpo-about-area
-#0.7	destination-area
-#0.8	Room-section
-#0.9	video-banner-area
-#1.0	testimonial-area
-#1.1	blog-area
-#1.2	footer-area
-
-
---------------------------------------------------------------
-#2.0  Home-style-2
---------------------------------------------------------------
-  #2.1 featured-area
-
-
---------------------------------------------------------------
-#3.0  Home-atyle-3
---------------------------------------------------------------
-
---------------------------------------------------------------
-#4.0  About-page
---------------------------------------------------------------
- #4.1 counter-area
-
-
---------------------------------------------------------------
-#5.0  Room-single-pages
---------------------------------------------------------------
-
---------------------------------------------------------------
-#6.0	service-single-page
---------------------------------------------------------------
-
---------------------------------------------------------------
-#7.0 FAQ page
---------------------------------------------------------------
-
---------------------------------------------------------------
-#8.0 Contact-page
---------------------------------------------------------------
-
---------------------------------------------------------------
-#9.0 blog-page-section
---------------------------------------------------------------
-
-
---------------------------------------------------------------
-#10.0 wpo-blog-single-section
---------------------------------------------------------------
-
-
---------------------------------------------------------------
-#10.0 error-404-section
---------------------------------------------------------------
-
-
-----------------------------------------------------------------*/
-/*---------------------------
-	Fonts
-----------------------------*/
-@import url(https://fonts.googleapis.com/css?family=Jost:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Outfit:100,200,300,regular,500,600,700,800,900);
 /*--------------------------------------------------------------
 #0.1    Theme Reset Style
 --------------------------------------------------------------*/
@@ -82,7 +7,7 @@ html {
 }
 
 body {
-  font-family: "Jost", sans-serif;
+  font-family: "Outfit", sans-serif;
   background-color: #fff;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -106,7 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Jost", sans-serif;
+  font-family: "Outfit", sans-serif;
   color: #283a5e;
   font-weight: 600;
 }
@@ -1198,10 +1123,16 @@ button:focus {
 }
 
 @media (max-width: 991px) {
+  .header-inner {
+    padding-block: 1rem;
+  }
+  .slide-subtitle p {
+    line-height: 18px;
+  }
   .header-style-1 .navigation,
   .header-style-2 .navigation,
   .header-style-3 .navigation {
-    background: #1b2c4d;
+    background: #ffffff;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
   .header-style-2 .navigation {
@@ -2593,7 +2524,6 @@ hero-style3
     width: 100%;
   }
   .select-sub:last-child {
-    margin-left: 20px;
     border-bottom: 0;
   }
 }
@@ -2643,8 +2573,11 @@ hero-style3
   position: relative;
   line-height: 75px;
 }
+.faq-pg-section {
+  padding-top: 78px;
+}
 .wpo-section-title {
-  margin-bottom: 48px;
+  margin-bottom: 65px;
 }
 .wpo-section-title span {
   font-size: 18px;
@@ -3172,7 +3105,10 @@ hero-style3
   font-size: 19px;
   text-transform: uppercase;
   font-weight: 700;
-  font-family: "Jost", sans-serif;
+  font-family: "Outfit", sans-serif;
+}
+.form-grid-container h4{
+  line-height: 20px;
 }
 .client-text p {
   color: #8e9fc0;
@@ -7679,10 +7615,123 @@ end*
   font-size: 14px;
   color: gray;
 }
+.mt-0 {
+  margin-top: 0px;
+}
+@media (max-width: 1000px) {
+  .banner-form-btn{
+    display: flex;
+    justify-content: center;
+  }
+  .select-sub{
+border:  unset;
+margin-bottom: 0px !important;
+}
+  
+  .banner-form-btn button{
+    max-width: max-content !important;
+  }
+  
+  .banner-form-btn {
+    grid-column: 1 / -1;
+  }
+
+  .wpo-select-area form {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .select-sub {
+    width: unset !important;
+  }
+}
 
 @media (max-width: 767px) {
   .hero-style-2 .slide-caption h2 {
     font-size: 28px;
     line-height: 29px;
   }
+  .services-row {
+    flex-wrap: wrap;
+    gap: 13px;
+  }
+  .wpo-footer-top .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .wpo-upper-footer {
+    padding-block: 0px !important;
+  }
+  .wpo-select-area form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .select-sub {
+    width: unset !important;
+  }
+  .wpo-select-section {
+    position: unset;
+    transform: translate(0px);
+    background: white;
+    z-index: 999;
+    left: 50%;
+    width: 100%;
+    max-width: 1250px;
+    padding-top: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-style-2 .slide-caption h2 {
+    font-size: 28px;
+    line-height: 29px;
+  }
+  .services-row {
+    flex-wrap: wrap;
+    gap: 13px;
+  }
+  .wpo-footer-top .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .wpo-upper-footer {
+    padding-block: 0px !important;
+  }
+  .wpo-select-area form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .select-sub {
+    width: unset !important;
+  }
+  .wpo-select-section {
+    position: unset !important;
+    transform: translate(0px) !important;
+    background: white;
+    z-index: 999;
+    left: 50%;
+    width: 100%;
+    max-width: 1250px;
+    padding-top: 2rem;
+  }
+}
+.market-section{
+  height: 100vh;
+  padding-block: 2rem;
+}
+.h-100{
+  height: 100% !important;
+}
+.popup-img img{
+  object-fit: cover;
+  object-position: center;
+}
+
+.popup-grid{
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+}
+
+.form-grid-container{
+     padding: 30px 32px 24px;
 }
